@@ -1,13 +1,13 @@
 {
   "name": "@xiges/generator-jhipster-firebase",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JHipster module for google firebase",
   "keywords": [
     "yeoman-generator",
     "jhipster-module",
     "jhipster-5"
   ],
-  "homepage": "https://github.com/tharinduvibuddha/jhipster-generator-firebase",
+  "homepage": "https://github.com/xiges/jhipster-generator-firebase",
   "author": "Tharindu Vibuddha (https://xiges.io)",
   "files": [
     "generators"
@@ -15,7 +15,7 @@
   "main": "generators/app/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tharinduvibuddha/jhipster-generator-firebase.git"
+    "url": "git+https://github.com/xiges/jhipster-generator-firebase.git"
   },
   "dependencies": {
     "chalk": "2.4.1",
@@ -52,7 +52,7 @@
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/tharinduvibuddha/jhipster-generator-firebase/issues"
+    "url": "https://github.com/xiges/jhipster-generator-firebase/issues"
   },
   "directories": {
     "test": "test"

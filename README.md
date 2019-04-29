@@ -38,12 +38,6 @@ Run the module on a JHipster generated application:
 yo jhipster-ff4j
 ```
 
-If you want don't want to answer each question you can use
-
-```bash
-yo jhipster-ff4j default
-```
-This will enable auditing for all available entities (only ones created by the jhipster:entity generator) and add the audit log page under admin
 
 
 ## License
