@@ -21,13 +21,7 @@ As this is a [JHipster](http://jhipster.github.io/) module, we expect you have J
 To install this module:
 
 ```bash
-npm install -g generator-jhipster-firebase
-```
-
-To update this module:
-
-```bash
-npm update -g generator-jhipster-firebase
+npm i @xiges/generator-jhipster-firebase
 ```
 
 ## Usage

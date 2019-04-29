@@ -1,6 +1,6 @@
 {
   "name": "@xiges/generator-jhipster-firebase",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JHipster module for google firebase",
   "keywords": [
     "yeoman-generator",
