@@ -35,7 +35,7 @@ npm update -g generator-jhipster-firebase
 Run the module on a JHipster generated application:
 
 ```bash
-yo jhipster-ff4j
+yo jhipster-firebase
 ```
 
 
