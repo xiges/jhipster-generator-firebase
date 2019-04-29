@@ -1,0 +1,10 @@
+{
+  "generator-jhipster-module": {
+    "promptValues": {
+      "githubName": "tharinduvibuddha",
+      "authorName": "Tharindu vibuddha",
+      "authorEmail": "vibuddha@xiges.io",
+      "authorUrl": "https://xiges.io"
+    }
+  }
+}
