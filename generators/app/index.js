@@ -5,8 +5,8 @@ const jhipsterConstants = require('generator-jhipster/generators/generator-const
 const packagejs = require('../../package.json')
 const utilYaml = require('./utilYaml.js');
 
-const FIREBASE = 'Firebase';
-const DEAULT_FIREBASE_TYPE = 'fcm';
+const FCM = 'fcm';
+const DEAULT_FIREBASE_TYPE = 'FCM';
 const DEFAULT_FIREBASE_SERVER_KEY = '1234bcnxbc';
 const DEAULT_FIREBASE_API_URL = 'https://fcm.googleapis.com/fcm/send';
 
@@ -54,7 +54,7 @@ module.exports= class extends BaseGenerator{
 
         const prompts = [{
             type:'list',
-            name:'firebase',
+            name:'firebaseType',
             message:`Which ${chalk.yellow('*type*')} of  would you like to add?`,
             choices:[
                 {
@@ -66,7 +66,7 @@ module.exports= class extends BaseGenerator{
             default:DEFAULT_FIREBASE_TYPE
         },
             {
-                when: response => response.firebase === FCM,
+                when: response => response.firebaseType === FCM,
                 type: 'input',
                 name:'firebaseServerKey',
                 message:'Please enter your Firebase server key...',
@@ -74,17 +74,17 @@ module.exports= class extends BaseGenerator{
                 store:true
             },
 
-            { when: response => response.firebase === FCM,
+            { when: response => response.firebaseType === FCM,
                 type: 'input',
                 name:'firebaseApiURL',
                 message:'Please enter your Firebase API URL...',
-                default:DEFAULT_FIREBASE_SERVER_KEY,
+                default:DEAULT_FIREBASE_API_URL,
                 store:true
 
 
             }];
         if (this.defaultOptions){
-            this.firebase = DEAULT_FIREBASE_TYPE;
+            this.firebaseType = DEAULT_FIREBASE_TYPE;
             this.firebaseServerKey = DEFAULT_FIREBASE_SERVER_KEY;
             this.firebaseApiURL = DEAULT_FIREBASE_API_URL;
             done();
@@ -92,8 +92,8 @@ module.exports= class extends BaseGenerator{
             this.prompt(prompts).then((props) => {
                 this.props = this.props;
                 //variable from questions
-                this.firebase = this.props.firebase;
-                if(this.props.firebase === FCM){
+                this.firebaseType = this.props.firebaseType;
+                if(this.props.firebaseType === FCM){
                     this.firebaseServerKey = this.props.firebaseServerKey;
                     this.firebaseApiURL =this.props.firebaseApiURL;
                 }
@@ -117,7 +117,7 @@ module.exports= class extends BaseGenerator{
 
         };
 
-        switch (this.firebase){
+        switch (this.firebaseType){
             case FCM:
                 this.installFCM();
                 break;

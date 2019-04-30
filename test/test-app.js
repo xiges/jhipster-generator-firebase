@@ -17,7 +17,7 @@ describe('JHipster generator google-firebase', () => {
                     testmode: true
                 })
                 .withPrompts({
-                    firebase: 'FCM',
+                    firebase: 'fcm',
                     firebaseServerKey: '1234bcnxbc',
                 })
                 .on('end', done);
@@ -44,7 +44,7 @@ describe('JHipster generator google-firebase', () => {
                     testmode: true
                 })
                 .withPrompts({
-                    firebase: 'FCM',
+                    firebaseType: 'fcm',
                     firebaseServerKey: '1234bcnxbc',
                 })
                 .on('end', done);
@@ -71,7 +71,7 @@ describe('JHipster generator google-firebase', () => {
                     testmode: true
                 })
                 .withPrompts({
-                    firebase: 'FCM',
+                    firebaseType: 'fcm',
                     firebaseServerKey: '1234bcnxbc',
                 })
                 .on('error', () => {
@@ -100,7 +100,7 @@ describe('JHipster generator google-firebase', () => {
                     testmode: true
                 })
                 .withPrompts({
-                    firebase: 'FCM',
+                    firebaseType: 'fcm',
                     firebaseServerKey: '1234bcnxbc',
                 })
                 .on('end', done);
